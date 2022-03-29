@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(88, 60, 16);
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+h1:hover {
+    font-size: 34px;
+    color: darkorange;
+    transform: scale(1.2);
+}
+
+h2{
+    padding: 10px;
+    color: aqua
+}

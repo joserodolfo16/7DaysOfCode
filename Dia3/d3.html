@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <script>
+
+        function parte1(){
+        var area;
+
+        area = prompt("Você quer seguir sua carreira em qual área? Digite 1 para Front-End ou 2 para Back-End: ");
+        if (area == 1){
+            var linguagem = prompt("Você deseja aprender React ou Vue? Digite 1 para React ou 2 para Vue: ");
+            }else
+        if(area == 2){
+            var linguagem = prompt("Você deseja aprender C# ou Java? Digite 1 para C# ou 2 para Java: ");
+            }else 
+            {
+                alert("Resposta inválida! Digite 1 ou 2 para selecionar uma alternativa.")
+            }
+        
+        var escolha = prompt("Você deseja se especializar na área escolhida (digite 1) ou seguir se desenvolvendo para se tornar Fullstack (digite 2)?");
+        if (escolha == 1){
+            alert("Continue focado! Se especializar garante o sucesso rápido na área que escolheu.");
+        }else{
+            alert("Se desenvolver completamente leva tempo e demanda estudo! Mas sempre haverão oportunidades para quem é desenvolvedor fullstack.");
+        }
+    }
+        function parte2(){
+        var novasTecnologias = [];
+        novasTecnologias.push(prompt("Quais tecnologias você gostaria de se especializar ou conhecer? Coloque uma tecnologia de cada vez!"));
+        var contador = 0;
+        var resposta = alert("Muito bom! Aprender " + novasTecnologias[contador] + " vai te tornar um ótimo programador!");
+        var pergunta = prompt("Deseja aprender ou conhecer alguma outra tecnologia? Digite 1 para sim ou 2 para não.");
+        while (pergunta == 1){
+            novasTecnologias.push(prompt("Qual outra tecnologia você se interessa?"));
+            contador ++;
+            resposta = alert("Ótimo! Aprender " + novasTecnologias[contador] + " ajudará bastante no seu desenvolvimento.");
+            pergunta = prompt("Deseja aprender ou conhecer alguma outra tecnologia? Digite 1 para sim ou 2 para não.");
+        }
+
+        document.write("<h1>Lista com as tecnologias desejadas: </h1><br>")
+	
+	    for (var i = 0; i < novasTecnologias.length; i++)
+	    document.write("<h2>" + (i + 1) + ". " + novasTecnologias[i] + "</h2>")
+    }
+
+
+    parte1();
+    parte2();
+
+    </script>
+</body>
+</html>
